@@ -23,7 +23,7 @@ Create a logstash input based on http-plugin
     user: myuser
     password: mypassword
     ```   
-4. In another terminal run `elastic_logger.py` to generate data.
+ 4. In another terminal run `elastic_logger.py` to generate data.
 
     `python elastic_logger.py`
 
@@ -36,4 +36,4 @@ Create a logstash input based on http-plugin
         headers=self.headers,
         auth=('myuser', 'mypassword'))
     ```
-5. Navigate to `http://localhost:5601` to see the kibana interface and click on `Discover` tab. The data from the topic would be there.
+ 5. Navigate to `http://localhost:5601` to see the kibana interface and click on `Discover` tab. The data from the topic would be there.
