@@ -4,7 +4,7 @@ Create a logstash input based on http-plugin
 #### What is it ?
  This example shows the usage of logstash-http-input plugin. An external port can be used to write data to logstash which can be further visualized using kibana.
 
- #### Usage:
+#### Usage:
  1. Install docker.
  2. Install `docker-compose`
 
@@ -23,7 +23,6 @@ Create a logstash input based on http-plugin
     user: myuser
     password: mypassword
     ```   
-
 4. In another terminal run `elastic_logger.py` to generate data.
 
     `python elastic_logger.py`
@@ -37,5 +36,4 @@ Create a logstash input based on http-plugin
         headers=self.headers,
         auth=('myuser', 'mypassword'))
     ```
-
 5. Navigate to `http://localhost:5601` to see the kibana interface and click on `Discover` tab. The data from the topic would be there.
